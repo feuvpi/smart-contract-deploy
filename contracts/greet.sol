@@ -9,4 +9,8 @@ contract greet {
     function giveGreeting() public {
         greetingsAmount += 1;
     }
+
+    function getGreetings() public view returns (uint256) {
+        return greetingsAmount;
+    }
 }
